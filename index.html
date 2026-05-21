@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>英文字彙翻頁卡</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header>
+      <h1>國中英文字彙翻頁卡</h1>
+      <p>點擊卡片翻面，查看中文解釋、詞性、例句與字根分析。</p>
+    </header>
+
+    <section class="card-area">
+      <div class="flip-card" id="flashcard">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="word-label">英文單字</div>
+            <div class="word-text" id="word">abandon</div>
+            <div class="hint">點擊查看中文解釋</div>
+          </div>
+          <div class="flip-card-back">
+            <div class="back-title">詞彙詳解</div>
+            <div class="detail-row"><span>中文：</span><span id="meaning">放棄；拋棄</span></div>
+            <div class="detail-row"><span>詞性：</span><span id="part">動詞</span></div>
+            <div class="detail-row"><span>例句：</span><span id="example">He had to abandon the old bike because it was too damaged.</span></div>
+            <div class="detail-row"><span>字根分析：</span><span id="root">a- (to) + bandon (control/authority) → 放開控制</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls">
+      <button id="prevBtn">上一个</button>
+      <button id="flipBtn">翻頁</button>
+      <button id="nextBtn">下一个</button>
+      <a class="link-button" href="edit.html">編輯單字</a>
+    </section>
+
+    <footer>
+      <p>共 10 個單字，左右按鈕切換，翻頁按鈕顯示背面資訊。</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

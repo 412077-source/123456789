@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>編輯英文字彙</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header>
+      <h1>編輯英文字彙</h1>
+      <p>在這裡可以修改、刪除或新增單字，變更會儲存在本機瀏覽器中。</p>
+    </header>
+
+    <section class="editor-shell">
+      <div class="editor-panel">
+        <label for="wordSelect">選擇單字</label>
+        <select id="wordSelect"></select>
+
+        <label for="wordInput">英文單字</label>
+        <input id="wordInput" type="text" placeholder="abandon" />
+
+        <label for="meaningInput">中文解釋</label>
+        <input id="meaningInput" type="text" placeholder="放棄；拋棄" />
+
+        <label for="partInput">詞性</label>
+        <input id="partInput" type="text" placeholder="動詞" />
+
+        <label for="exampleInput">例句</label>
+        <textarea id="exampleInput" rows="3" placeholder="He had to abandon the old bike..."></textarea>
+
+        <label for="rootInput">字根分析</label>
+        <textarea id="rootInput" rows="2" placeholder="a- (to) + bandon..." ></textarea>
+
+        <div class="editor-buttons">
+          <button id="saveBtn">儲存變更</button>
+          <button id="newBtn" class="secondary">新增單字</button>
+          <button id="deleteBtn" class="secondary danger">刪除單字</button>
+        </div>
+      </div>
+
+      <aside class="editor-info">
+        <div class="info-card">
+          <h2>編輯提示</h2>
+          <ul>
+            <li>選擇左側單字進行修改。</li>
+            <li>按「新增單字」可清空表單並新增新條目。</li>
+            <li>按「刪除單字」可移除目前選取的單字。</li>
+            <li>返回主頁後，新的內容會立即生效。</li>
+          </ul>
+        </div>
+        <a href="index.html" class="link-button">返回翻頁卡</a>
+      </aside>
+    </section>
+  </main>
+
+  <script src="edit.js"></script>
+</body>
+</html>
